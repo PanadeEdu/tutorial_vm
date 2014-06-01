@@ -46,8 +46,7 @@ apt-get install -y graphicsmagick
 apt-get install -y git
 
 # Adding User dev with password dev
-useradd -G vagrant -m -s /bin/bash dev
+useradd -G vagrant,admin -m -s /bin/bash dev
 echo "dev:dev" | chpasswd
 ln -fs /vagrant /home/dev/vagrant-folder
-printf "dev ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 

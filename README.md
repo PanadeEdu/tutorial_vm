@@ -89,6 +89,9 @@ Die Option "Start Vagrant VM" downloaded und installiert die VM, solange noch ke
 Wenn ihr Vagrant Installiert habt ist die Anwendung relativ einfach.
 Wie schon bei der Installation habt ihr 2 Optionen, startscript.bat oder selbst über die CMD.
 
+HINWEIS: Sobald das System das 1. Mal heruntergefahren wird, wird beim nächsten Hochfahren der Apache2 Server nicht mitgestartet!
+Dazu müsst ihr euch per ssh in die VM einwählen, und dort "sudo apache2ctl start" eingeben. Dieser Befehl startet den apache2 Server manuell. 
+
 **startscript.bat**
 
 1: Start Vagrant VM  
