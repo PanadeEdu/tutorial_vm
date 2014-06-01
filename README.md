@@ -128,19 +128,19 @@ Solange kein Command läuft, kann man das Fenster jederzeit schließen.
 
 Von hier aus lassen sich alle "vagrant" Kommandos ausführen:
 
-> vagrant up  
+- vagrant up  
 Startet die VM, oder Installiert sei erneut (wenn die nicht installiert ist)
 
-> vagrant reload  
+- vagrant reload  
 Führt einen sanften Reload/Restart durch.
 
-> vagrant halt  
+- vagrant halt  
 Fährt die VM herunter, ihre Daten bleiben aber bestehen.
 
-> vagrant suspend  
+- vagrant suspend  
 Versetzt die VM in einen Suspend-Modus. Ihre Daten im RAM bleiben erhalten.
 
-> vagrant destroy  
+- vagrant destroy  
 Deinstalliert die VM (aber nicht die Daten im vagrant ordner).
 Diese Funktion ist Sinnvoll wenn man Speicherplatz sparen möchte oder einen Fehler bei der
 Konfiguration vorgenommen hat.  
