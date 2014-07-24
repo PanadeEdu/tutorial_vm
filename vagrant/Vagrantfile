@@ -42,7 +42,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a Sync Folder "www" for the VM Dir /var/www with owner www-data
   config.vm.synced_folder "vhosts/", "/etc/apache2/sites-available",
     owner: "root", group: "root"
-  config.vm.synced_folder "www/", "/var/www",
+  config.vm.synced_folder "tutorial/", "/var/www/tutorial",
     owner: "www-data", group: "www-data"
 
 end

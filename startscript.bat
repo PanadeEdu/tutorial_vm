@@ -27,6 +27,25 @@ if '%errorlevel%' NEQ '0' (
 
 cls
 cd %~dp0
+
+:: Getting NonShortened Path
+:-------------------------------------
+setlocal EnableDelayedExpansion
+set myPath=%~DP0
+set myPath=%myPath:*\=%
+set fullPath=
+pushd \
+for %%a in ("%myPath:\=" "%") do (
+   set thisDir=%%~a
+   for /D %%d in ("!thisDir:~0!*") do (
+      set fullPath=!fullPath!\%%d
+      cd %%d
+   )
+)
+popd
+:-------------------------------------
+cd %~D0%fullPath%
+
 cd vagrant
 :start
 echo Please select an Option:
