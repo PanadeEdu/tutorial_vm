@@ -79,3 +79,4 @@ useradd -G vagrant,admin -m -s /bin/bash dev
 echo "dev:dev" | chpasswd
 ln -fs /vagrant /home/dev/vagrant-folder
 
+chown -R www-data:www-data /var/www
